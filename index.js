@@ -13,10 +13,7 @@ const fs = require('fs');
 const jwt = require("jsonwebtoken");
 
 
-app.use(cors({
-     credentials:true,
-     origin:"http://localhost:3000",
-}));
+app.use(cors());
 app.use(express.json()); // for body parsing 
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
