@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 
 require("dotenv").config();
-const MONGODB_URL = 'mongodb+srv://subhashmote94:HswWeTrs9e5suvVh@cluster0.wnplhyg.mongodb.net/Blog'
+const MONGODB_URL = process.env.MONGODB_URL;
 
 
 const dbConnect = () => {
